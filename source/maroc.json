@@ -1,0 +1,16 @@
+[
+    {
+      "MA-02":["Oujda-Angad","Nador","Driouch","Jerada","Berkan","Taourirt","Guercif","Figuig"],
+      "MA-07":["Marrakech","Chichaoua","Al Haouz","Kelâa des Sraghna","Essaouira","Rehamna","Safi","Youssoufia"],
+      "MA-08":["Errachidia","Ouarzazate","Midelt","Tinghir","Zagora"],
+      "MA-03":["Fès","Meknès","El Hajeb","Ifrane","Moulay Yacoub","Sefrou","Boulemane","Taounate","Taza"],
+      "MA-10":["Guelmim","Assa-Zag","Tan-Tan","Sidi Ifni"],
+      "MA-01":["Tanger-Assilah","M'diq-Fnideq","Tétouan","Fahs-Anjra","Larache","Al Hoceima","Chefchaouen","Ouazzane"],
+      "MA-09":["Agadir Ida-Ou-Tanane","Inezgane-Aït Melloul","Chtouka-Aït Baha","Taroudannt","Tiznit","Tata"],
+      "MA-06":["Casablanca","Mohammadia","El Jadida","Nouaceur","Médiouna","Benslimane","Berrechid","Settat","Sidi Bennour"],
+      "MA-12":["Oued Ed-Dahab","Aousserd"],
+      "MA-05":["Béni Mellal","Azilal","Fquih Ben Salah","Khénifra","Khouribga"],
+      "MA-04":["Rabat","Salé","Skhirate-Témara","Kénitra","Khémisset","Sidi Kacem","Sidi Slimane"],
+      "MA-11":["Laâyoune","Boujdour","Tarfaya","Es-Semara"]
+    }
+  ]

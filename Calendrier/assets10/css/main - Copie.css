@@ -1,0 +1,337 @@
+body
+{
+    background: #dbd0e4;
+}
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: #dbd0e4;
+}
+.color-chiffres{color:#9B4CE2}.block-1{background:rgba(255,255,255,0.4)}.titre-block{color:#491478}.title-n1{font-size:19px;color:#491478;font-weight:600}.title-n2-border{position:relative;font-size:16px;color:#491478;font-weight:600;padding-bottom:4px}.title-n2-border:after{content:"";height:1px;width:20%;background:#491478;position:absolute;left:0;bottom:0}.background-gradient-to-right{background:linear-gradient(to right, rgba(75,20,120,0.12), 40%, rgba(55,55,95,0.1)) !important}.background-gradient-to-left{background:linear-gradient(to left, rgba(75,20,120,0.12), 40%, rgba(55,55,95,0.1)) !important}.width-100{width:100%}.width-30{width:30%}.btn-primary-custom{background:#A68EBC;padding:6px 12px 0px 12px;font-size:14px;border:0;border-radius:10px}.btn-primary-custom i{font-size:16px !important;vertical-align:middle}.btn-primary-custom span{margin-left:6px;vertical-align:top}.btn-primary-custom.btn-xs{font-size:12px;background:#36365E;padding:4px 8px}.btn-primary-custom.btn-xs span{margin-left:4px}.btn-primary-custom.btn-xs i{font-size:12px !important}.form-icon input.form-control{width:100%;font-weight:bold;height:45px;border:0;border-radius:10px;background-color:#e5e0eb}.form-icon .mdi{font-size:36px}#layout-wrapper header{background:transparent}#layout-wrapper header .navbar-header{height:50px !important}#layout-wrapper header .navbar-header .header-item{height:40px}#layout-wrapper .navbar-menu{background:linear-gradient(#36365E 58%, #491478)}#layout-wrapper .navbar-menu .navbar-nav .nav-link{padding:0.425rem 1.5rem}#layout-wrapper .navbar-menu .navbar-nav .nav-link i{font-size:19px !important}#layout-wrapper .navbar-menu .btn-vertical-sm-hover{position:absolute;top:30px}#layout-wrapper .main-content .layout-width .title-topbar{display:flex;align-items:flex-end;gap:10px;background:linear-gradient(to left, #36365E, 40%, #491478) !important;padding:10px 20px;border-radius:5px;color:#fff}#layout-wrapper .main-content .layout-width .title-topbar h1{font-size:20px;font-weight:600;color:#fff;margin:0}#layout-wrapper .main-content .page-content{padding:calc(30px + 1.5rem) calc(1.5rem * .5) 60px calc(1.5rem * .5)}.card{border-radius:15px;border:0}.card:before,.card::after{content:none}.card .card-header{border:0}.card .card-header .card-title{color:#491478;font-weight:600}.card.box-chiffre-other{width:100%}.card.box-chiffre-other .progress-nav .progress{position:absolute;left:0}.card.box-chiffre-other .progress-nav .label-progress{height:28px;top:-4% !important;width:99% !important;font-size:20px;background:transparent !important;display:flex;justify-content:space-around}.card.box-chiffre-other .progress-nav .label-progress .progress-text-custom{font-size:13px}.card.box-chiffre-other .progress-nav .progress-nav .nav{display:flex;justify-content:space-between}.card.box-chiffre-other .progress-nav .nav-pills .nav-item{display:flex;flex-direction:column;align-items:center}.card.box-chiffre-other .progress-nav .nav-pills .nav-item button.nav-link{border-radius:50% !important;background-color:#cdc6d9 !important;border:5px solid #b5adc5 !important;margin:auto}.card.box-chiffre-other .progress-nav .nav-pills .nav-item .progress-text-custom{color:#491478 !important}.progress{background:rgba(255,255,255,0.5) !important;width:100%}.progress .progress-bar{border-radius:15px}.progress .progress-bar.background-gradient-to-right{background:linear-gradient(to right, #4b1478, 80%, rgba(55,55,95,0.1)) !important}.form-steps .step-arrow-nav .nav-pills{background-color:transparent !important}.form-steps .step-arrow-nav .nav-pills .nav-item{background:#A68EBC;border-radius:10px 10px 0 0;border:1px solid #491478;border-bottom:0}.form-steps .step-arrow-nav .nav-pills .nav-item button.nav-link{border-radius:6px 6px 0 0;color:#491478;font-size:16px}.form-steps .step-arrow-nav .nav-pills .nav-item button.nav-link i{font-size:19px;background:#C2B8CF;padding:0 10px;margin-right:10px;border-radius:6px}.form-steps .step-arrow-nav .nav-pills .nav-item button.nav-link::before{content:none}.form-steps .step-arrow-nav .nav-pills .nav-item button.nav-link.active{background:#491478;color:#fff}.form-steps .step-arrow-nav .nav-pills .nav-item button.nav-link.active i{color:#491478;background:#fff}.form-steps .step-arrow-nav .nav-pills .nav-item button.nav-link.done{background:transparent}.form-steps .tab-content{min-height:300px;padding:30px 20px;background:#C2B8CF;border:1px solid #491478;border-radius:0 0 10px 10px}.form-steps .tab-content .btn-label{border:0;color:#fff}
+.form-steps .tab-content .btn-label.nexttab{background:#491478}.form-steps .tab-content .btn-label.previestab{background:#EE6352}.form-steps .tab-content .btn-label .label-icon{background-color:transparent}.form-steps .tab-content label{color:#491478;font-weight:600;font-size:13px}.form-steps .tab-content .form-control{padding:0.4rem 1rem;color:#491478;background:#DAD3E3}.form-steps .tab-content .form-select{background-color:#DAD3E3;color:#491478;padding:5px 10px}.form-steps .tab-content .form-check.check-box .form-check-input{width:20px;height:20px;background-color:#fff;margin-bottom:6px}.form-steps .tab-content .form-check.check-box .form-check-input:checked[type=checkbox]{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23491478' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e")}.form-steps .tab-content .form-check.check-box .form-check-label{margin-left:6px;vertical-align:sub}.form-steps .tab-content .form-switch .form-check-input:checked{background-color:#A68EBC;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23491478'/%3e%3c/svg%3e")}.table-responsive tr{border-color:#A68EBC}
+.form-steps .tab-content .btn-label.savetab{background:#491478}
+/* Update 13-10-2023 "OBouysfi" */
+/** Parametrage CSS Style **/
+.roles-section{
+    background: #D2CBDD;
+    padding: 20px 40px 20px 20px;
+    border-radius: 15px;
+}
+.btn-action-show i {
+    color: #491478; /* Couleur pour l'icône d'édition */
+}
+.btn-action-refresh i {
+    color: #491478; /* Couleur pour l'icône d'édition */
+}
+.btn-action-show{
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 18px;
+}
+.btn-action-delete{
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 18px;
+}
+.btn-action-refresh{
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 18px;
+}
+.btn-action-delete i {
+    color: #491478; /* Couleur pour l'icône de suppression, choisissez la couleur que vous souhaitez */
+}
+#title-section-parametrage h5{
+    margin-bottom: 40px;
+}
+.details-type {
+    padding: 5px 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    text-align: center;
+    color: #491478;
+}
+
+.lecture {
+    background-color: #D2CBDD;
+}
+
+.ecriture {
+    background-color: #D2CBDD;
+}
+.switch-off .form-check-input:after {
+    content: "Off";
+    color: #aaa; /* couleur grise */
+    position: relative;
+    left: 10px;
+}
+/** Role tab **/
+#th-role{
+    /* border-bottom: 2px solid #fff;  */
+    padding: 10px; 
+    text-align: left; 
+    background-color: #E3E3E9; 
+    color: #491478;"
+}
+#section-table-roletab{
+    width: 100%; 
+    height: 300px; 
+    overflow-x: auto; 
+    overflow-y: auto; 
+    margin-top: 20px;
+}
+#section-table-roletab .table-container{
+    max-height: 420px;
+    overflow-y: auto;
+}
+#add-list-role{
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+#add-list-role .ri-add-line:before{
+    content: "\ea13";
+    border: 1px solid;
+    padding: 0px 4px 0px 4px;
+    border-radius: 4px;
+}
+.detail-col {
+    padding: 0 5px; /* Ajout de petits espacements à gauche et à droite pour éviter que les textes se chevauchent */
+}
+#add-role-actifs-btn .ri-add-line:before{ 
+    content: "\ea13";
+    border: 1px solid;
+    padding: 0px 4px 0px 4px;
+    border-radius: 4px;
+}
+/** End Role tab **/
+/** Utilisateur tab **/
+#section-table-utulisateurtab table{
+    width:100%; 
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+#section-table-utulisateurtab table #td-utilisateur{
+    padding: 10px; 
+    color: #491478;
+}
+#section-table-utulisateurtab table #td-utilisateur span{
+    display: inline-block;
+    background-color: #36365E;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 9px;
+    margin-left: 5px;
+}
+#section-table-utulisateurtab table #td-utilisateur img{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+#th-utilisateur{
+    /* border-bottom: 2px solid #fff;  */
+    padding: 10px; 
+    text-align: left; 
+    background-color: #E3E3E9; 
+    color: #491478;"
+}
+#section-table-utulisateurtab{
+    width: 100%; 
+    height: 300px; 
+    overflow-x: auto; 
+    overflow-y: auto; 
+    margin-top: 20px;
+}
+#section-table-utulisateurtab .table-container{
+    max-height: 420px;
+    overflow-y: auto;
+}
+#section-table-utulisateurtab{
+    /* background: #D2CBDD;
+    padding: 20px 40px 20px 20px;
+    border-radius: 15px; */
+}
+.utilisateur-section{
+    background: #bcb8c1;
+    padding: 5px 0px 0px 14px;
+    border-radius: 15px;
+}
+/** End Utilisateur tab **/
+.th-name{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.th-actions{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.draggable-item {
+    padding: 5px 10px;
+    border: 1px solid #36365E;
+    background-color: #36365E;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#editor {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#editor.ui-droppable-hover {
+    border-color: #68b3e3; /* couleur de bordure lors du survol avec un élément glissable */
+    background-color: #eef7fd; /* couleur d'arrière-plan lors du survol avec un élément glissable */
+}
+
+/** End Paramètrage CSS Style **/
+/** Scroll Style **/
+/* Pour les navigateurs WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #baaacb; /* Rend le fond de la barre de défilement transparent */
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px gray; /* Crée une ombre intérieure pour un effet de "fond" */
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(transparent 30%, #7c3bd3 30%, #491478 70%, transparent 70%); /* Crée un effet de barre de défilement "plus courte" */
+    border-radius: 10px;
+}
+/** -- End Scroll -- **/
+/* Option Offres Style */
+/** Listes */
+
+
+/* End Style Offres */
+
+#submit-valider{
+    width: 60%;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #A68EBC;
+    border-color: #A68EBC;
+    font-size: 16px;
+    font-weight: 500;
+    color: #491478;
+}
+#form-select select {
+    width: 100%;
+    padding: 10px; 
+    border-radius: 5px; 
+    appearance: none; 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    background: #CFC8D9;
+    position: relative; 
+    font-size: 16px;
+    color: #3B3565;
+}
+
+#form-select {
+    position: relative;
+}
+
+#form-select::after {
+    content: '\25BC';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Pour s'assurer que la flèche n'interfère pas avec les clics */
+    color: #3B3565; /* Couleur de la flèche, à ajuster selon le besoin */
+}
+.action-icons img{
+    margin: 20px;
+}
+.action-icon{
+    font-size: 21px;
+    color: #41226D;
+}
+#show-page{
+    margin-top: 15px;
+    margin-right: 15px;
+    color: #41226D;
+}
+.table-striped tr td{
+    color: #41226D;
+}
+#liste-cvtheque{
+    background: #c4bad1;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 10px;
+}
+/*** Page statistique cvthèque Style **/ 
+.box-chiffre-other {
+    padding: 0px;
+    background: #CDC6D9;
+}
+#title-chart{
+    font-size: 20px;
+    margin: 0 0 7px 0;
+    color: #491478;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #datatables-tab, #datatables-tab * {
+        visibility: visible;
+    }
+    #datatables-tab {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+#datatables-tab.dataTable tbody tr {
+    background-color: #C2B8CF !important;
+}
+#datatables-tab.dataTable tbody th, table.dataTable tbody td {
+    padding: 8px 19px !important;
+    border-bottom: 2px solid #f2f2f2;
+}
+#datatables-tab_info{
+    color: #491478;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#datatables-tab_paginate{
+    color: #491478;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#datatables-tab_length{
+    margin-top: -60px;
+}
+#datatables-tab_filter{
+    margin-top: -60px;
+}
+#datatables-tab_previous{
+    color: #491478;
+    font-weight: 500;
+}
+#datatables-tab_next{
+    color: #491478;
+    font-weight: 500;
+}

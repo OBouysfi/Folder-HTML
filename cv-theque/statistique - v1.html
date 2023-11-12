@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-layout-style="default" data-layout-position="fixed" data-topbar="light" data-sidebar="dark" data-sidebar-size="sm-hover" data-layout-width="fluid">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Liste des profiles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo-sm.png">
+    <!-- jsvectormap css -->
+    <link href="../assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+    <!-- gridjs css -->
+    <link rel="stylesheet" href="../assets/libs/gridjs/theme/mermaid.min.css">
+    <!-- Layout config Js -->
+    <script src="../assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- Layout Css-->
+    <link href="../assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- Main Css-->
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- Datatables --->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tableexport/5.2.0/css/tableexport.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/apexcharts@3.19.3/dist/apexcharts.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box horizontal-logo">
+                            <a href="#" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                                <span class="logo-lg">
+                            <img src="../assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                            </a>
+
+                            <a href="#" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                                <span class="logo-lg">
+                            <img src="../assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                        </button>
+
+
+                    </div>
+
+                    <div class="d-flex align-items-center">
+
+                        <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-search fs-22"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ms-1 topbar-head-dropdown header-item">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="../assets/images/flags/us.svg" alt="Header Language" height="20" class="rounded">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language py-2" data-lang="en" title="English">
+                                    <img src="../assets/images/flags/us.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">English</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp" title="Spanish">
+                                    <img src="../assets/images/flags/spain.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">Española</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr" title="German">
+                                    <img src="../assets/images/flags/germany.svg" alt="user-image" class="me-2 rounded" height="18"> <span class="align-middle">Deutsche</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it" title="Italian">
+                                    <img src="../assets/images/flags/italy.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">Italiana</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru" title="Russian">
+                                    <img src="../assets/images/flags/russia.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">русский</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ch" title="Chinese">
+                                    <img src="../assets/images/flags/china.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">中国人</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="fr" title="French">
+                                    <img src="../assets/images/flags/french.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">français</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ar" title="Arabic">
+                                    <img src="../assets/images/flags/ae.svg" alt="user-image" class="me-2 rounded" height="18">
+                                    <span class="align-middle">Arabic</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-toggle="fullscreen">
+                                <i class='bx bx-fullscreen fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="ms-1 header-item d-none d-sm-flex">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                                <i class='bx bx-moon fs-22'></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
+                            <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                                <i class='bx bx-bell fs-22'></i>
+                                <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span class="visually-hidden">unread messages</span></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+
+                                <div class="dropdown-head bg-primary bg-pattern rounded-top">
+                                    <div class="p-3">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <h6 class="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                            </div>
+                                            <div class="col-auto dropdown-tabs">
+                                                <span class="badge badge-soft-light fs-13"> 4 New</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="px-2 pt-2">
+                                        <ul class="nav nav-tabs dropdown-tabs nav-tabs-custom" data-dropdown-tabs="true" id="notificationItemsTab" role="tablist">
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#all-noti-tab" role="tab" aria-selected="true">
+                                                    All (4)
+                                                </a>
+                                            </li>
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#messages-tab" role="tab" aria-selected="false">
+                                                    Messages
+                                                </a>
+                                            </li>
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#alerts-tab" role="tab" aria-selected="false">
+                                                    Alerts
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-content position-relative" id="notificationItemsTabContent">
+                                    <div class="tab-pane fade show active py-2 ps-2" id="all-noti-tab" role="tabpanel">
+                                        <div data-simplebar style="max-height: 300px;" class="pe-2">
+                                            <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                <div class="d-flex">
+                                                    <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-soft-info text-info rounded-circle fs-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                                    </div>
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-2 lh-base">Your <b>Elite</b> author Graphic
+                                                                Optimization <span class="text-secondary">reward</span> is
+                                                                ready!
+                                                            </h6>
+                                                        </a>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> Just 30 sec ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="all-notification-check01">
+                                                            <label class="form-check-label" for="all-notification-check01"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                                                        </a>
+                                                        <div class="fs-13 text-muted">
+                                                            <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                                graph 🔔.</p>
+                                                        </div>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 48 min ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="all-notification-check02">
+                                                            <label class="form-check-label" for="all-notification-check02"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                <div class="d-flex">
+                                                    <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-soft-danger text-danger rounded-circle fs-16">
+                                                    <i class='bx bx-message-square-dots'></i>
+                                                </span>
+                                                    </div>
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-2 fs-13 lh-base">You have received <b class="text-success">20</b> new messages in the conversation
+                                                            </h6>
+                                                        </a>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="all-notification-check03">
+                                                            <label class="form-check-label" for="all-notification-check03"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-reset notification-item d-block dropdown-item position-relative">
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                                                        </a>
+                                                        <div class="fs-13 text-muted">
+                                                            <p class="mb-1">We talked about a project on linkedin.</p>
+                                                        </div>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 4 hrs ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="all-notification-check04">
+                                                            <label class="form-check-label" for="all-notification-check04"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="my-3 text-center view-all">
+                                                <button type="button" class="btn btn-soft-success waves-effect waves-light">View
+                                                    All Notifications <i class="ri-arrow-right-line align-middle"></i></button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade py-2 ps-2" id="messages-tab" role="tabpanel" aria-labelledby="messages-tab">
+                                        <div data-simplebar style="max-height: 300px;" class="pe-2">
+                                            <div class="text-reset notification-item d-block dropdown-item">
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-1 fs-13 fw-semibold">James Lemire</h6>
+                                                        </a>
+                                                        <div class="fs-13 text-muted">
+                                                            <p class="mb-1">We talked about a project on linkedin.</p>
+                                                        </div>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 30 min ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="messages-notification-check01">
+                                                            <label class="form-check-label" for="messages-notification-check01"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-reset notification-item d-block dropdown-item">
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                                                        </a>
+                                                        <div class="fs-13 text-muted">
+                                                            <p class="mb-1">Answered to your comment on the cash flow forecast's
+                                                                graph 🔔.</p>
+                                                        </div>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="messages-notification-check02">
+                                                            <label class="form-check-label" for="messages-notification-check02"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-reset notification-item d-block dropdown-item">
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/users/avatar-6.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-1 fs-13 fw-semibold">Kenneth Brown</h6>
+                                                        </a>
+                                                        <div class="fs-13 text-muted">
+                                                            <p class="mb-1">Mentionned you in his comment on 📃 invoice #12501.
+                                                            </p>
+                                                        </div>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 10 hrs ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="messages-notification-check03">
+                                                            <label class="form-check-label" for="messages-notification-check03"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-reset notification-item d-block dropdown-item">
+                                                <div class="d-flex">
+                                                    <img src="../assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                    <div class="flex-1">
+                                                        <a href="#!" class="stretched-link">
+                                                            <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                                                        </a>
+                                                        <div class="fs-13 text-muted">
+                                                            <p class="mb-1">We talked about a project on linkedin.</p>
+                                                        </div>
+                                                        <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
+                                                            <span><i class="mdi mdi-clock-outline"></i> 3 days ago</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="px-2 fs-15">
+                                                        <div class="form-check notification-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="messages-notification-check04">
+                                                            <label class="form-check-label" for="messages-notification-check04"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="my-3 text-center view-all">
+                                                <button type="button" class="btn btn-soft-success waves-effect waves-light">View
+                                                    All Messages <i class="ri-arrow-right-line align-middle"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade p-4" id="alerts-tab" role="tabpanel" aria-labelledby="alerts-tab"></div>
+
+                                    <div class="notification-actions" id="notification-actions">
+                                        <div class="d-flex text-muted justify-content-center">
+                                            Select <div id="select-content" class="text-body fw-semibold px-1">0</div> Result <button type="button" class="btn btn-link link-danger p-0 ms-3" data-bs-toggle="modal" data-bs-target="#removeNotificationModal">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown ms-sm-3 header-item topbar-user">
+                            <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="../assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-semibold user-name-text">Anna Adame</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Founder</span>
+                            </span>
+                        </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <h6 class="dropdown-header">Welcome Anna!</h6>
+                                <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                                <a class="dropdown-item" href="apps-chat.html"><i class="mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Messages</span></a>
+                                <a class="dropdown-item" href="apps-tasks-kanban.html"><i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Taskboard</span></a>
+                                <a class="dropdown-item" href="pages-faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Help</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="pages-profile.html"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance : <b>$5971.67</b></span></a>
+                                <a class="dropdown-item" href="pages-profile-settings.html"><span class="badge bg-soft-success text-success mt-1 float-end">New</span><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                                <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+                                <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- ========== App Menu ========== -->
+    <div class="app-menu navbar-menu border-end">
+        <!-- LOGO -->
+        <div class="navbar-brand-box">
+            <!-- Dark Logo-->
+            <a href="#" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                <span class="logo-lg">
+                        <img src="../assets/images/logo-dark.png" alt="" height="40">
+                    </span>
+            </a>
+            <!-- Light Logo-->
+            <a href="#" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="../assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                <span class="logo-lg">
+                        <img src="../assets/images/logo-light.png" alt="" height="40">
+                    </span>
+            </a>
+            <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                <i class="ri-record-circle-line"></i>
+            </button>
+        </div>
+
+        <div id="scrollbar">
+            <div class="container-fluid">
+
+                <div id="two-column-menu">
+                </div>
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link current-menu" href="/fr/dashboard">
+                                <i class="fi fi-rr-stats"></i> <span data-key="t-dashboards">Tableaux de bord</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/fr/create-job-offre">
+                                <i class="fi fi-rr-megaphone"></i> <span data-key="t-publier-une-offre">Offres</span>
+                            </a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="/fr/my-short-list-table/2333">
+                            <i class="fi fi-rr-list-check"></i> <span data-key="t-matching">Matching</span>
+                        </a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                <i class="fi fi-rr-database"></i> <span data-key="t-cvtheque">CVthèque</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDashboards">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/fr/cvtheque-recruteur" class="nav-link" data-key="t-recherche">Recherche</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/fr/my-all-offres" class="nav-link" data-key="t-ajouter-des-profils">Ajouter des profils</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/fr/my-job-applications-table/2333">
+                                <i class="fi fi-rr-grid-dividers"></i> <span data-key="t-ats">ATS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="/fr/Publier%20une%20offre">
+                                <i class="fi fi-rr-calendar"></i> <span data-key="t-calendrier-entretiens">Calendrier</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link collapsed" href="#sidebarDashboards2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards2">
+                                <i class="fi fi-rr-question-square"></i> <span data-key="t-quiz">Quiz</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDashboards2">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/fr/liste-des-tests" class="nav-link" data-key="t-bibliotheque">Bibliothèque</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/fr/liste-offres-de-stage" class="nav-link" data-key="t-creer-un-quiz">Créer un quiz</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/fr/liste-offres-de-stage" class="nav-link" data-key="t-affecter">Affecter</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li> <!-- end Dashboard Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link collapsed" href="#sidebarDashboards3" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards3">
+                                <i class="fi fi-rr-users-alt"></i> <span data-key="t-staffing">Staffing</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDashboards3">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="/fr/profil-regie-timesheet" data-key="t-affectation">Affectation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" data-key="t-presences">Présences</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#" data-key="t-facturation">Facturation</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                </ul>
+
+                <ul class="navbar-nav fixed-bottom" id="navbar-nav-2">
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#">
+                            <i class="fi fi-rr-settings-sliders"></i></i> <span data-key="t-dashboards">Réglages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#">
+                            <i class="fi fi-rr-user"></i> <span data-key="t-dashboards">Utilisateur</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#">
+                            <i class="fi fi-rr-book-alt"></i> <span data-key="t-dashboards">Guides</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+
+        <div class="sidebar-background"></div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Vertical Overlay-->
+    <div class="vertical-overlay"></div>
+
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="layout-width mb-3">
+                    <div class="title-topbar">
+                        <h1 class="mb-sm-0"><i class="fi fi-rr-database"></i> <span data-key="t-cvtheque"> CVthèque</span></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="row p-3" style="background-color: #c4bad1;border-top-left-radius: 20px;border-top-right-radius: 20px;">
+                            <div class="col-md-3">
+                                <div class="form-group" id="form-select">
+                                    <select class="form-control" id="formation" name="formation">
+                                        <option value="" selected disabled>Formation</option>
+                                        <option value="bac">Bac</option>
+                                        <option value="bac+2">Bac +2</option>
+                                        <option value="bac+3">Bac +3</option>
+                                        <option value="bac+4">Bac +4</option>
+                                        <!-- Autres options -->
+                                    </select>
+                                </div>
+                            </div>
+                        
+                                <div class="col-md-3" >
+                                    <div class="form-group" id="form-select">
+                                        <select class="form-control" id="poste" name="poste">
+                                            <option value="" selected disabled>Poste</option>
+                                            <option value="bac">Bac</option>
+                                            <option value="bac+2">Bac +2</option>
+                                            <option value="bac+3">Bac +3</option>
+                                            <option value="bac+4">Bac +4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-3">
+                                    <div class="form-group" id="form-select">
+                                        <select class="form-control" id="experience" name="experience">
+                                            <option value="" selected disabled>Expérience</option>
+                                            <option value="bac">Bac</option>
+                                            <option value="bac+2">Bac +2</option>
+                                            <option value="bac+3">Bac +3</option>
+                                            <option value="bac+4">Bac +4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-3">
+                                    <div class="form-group" id="form-select">
+                                        <select class="form-control" id="region" name="region">
+                                            <option value="" selected disabled>Région</option>
+                                            <!-- Autres options -->
+                                        </select>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="row p-3" style="background-color: #c4bad1;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">
+
+                                <div class="col-md-6">
+                                    <div class="form-group" id="form-select">
+                                        <select class="form-control" id="offre" name="offre">
+                                            <option value="" selected disabled>Offre d'emploi</option>
+                                            <option value="bac">Bac</option>
+                                            <option value="bac+2">Bac +2</option>
+                                            <option value="bac+3">Bac +3</option>
+                                            <option value="bac+4">Bac +4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-3">
+                                    <div class="form-group" id="form-select">
+                                        <select class="form-control" id="favoris" name="favoris">
+                                            <option value="" selected disabled>Mes favoris</option>
+                                            <option value="bac">Bac</option>
+                                            <option value="bac+2">Bac +2</option>
+                                            <option value="bac+3">Bac +3</option>
+                                            <option value="bac+4">Bac +4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-2">
+                                    <button type="submit" id="submit-valider" class="btn btn-primary w-100">Valider</button>
+                                </div>
+                        </div>
+
+                       <div class="row" id="liste-cvtheque">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="col-12 text-center">
+                                <a href="#" id="btnAjouter" class="action-icons"><img
+                                        src="../assets/images/cvtheque/ajouter.svg" alt="Ajouter" width="24"
+                                        height="24"></a> <!-- Pour l'ajoute -->
+                                <a href="#" id="btnFavori" class="action-icons"><img
+                                        src="../assets/images/cvtheque/favorie.svg" alt="Favori" width="24"
+                                        height="24"></a> <!-- Pour favorie -->
+                                <a href="#" id="btnEnvoyer" class="action-icons"><img
+                                        src="../assets/images/cvtheque/envoyer.svg" alt="Éditer" width="24"
+                                        height="24"></a> <!-- Pour Envoyer -->
+                                <a href="#" id="btnImprimer" class="action-icons"><img
+                                        src="../assets/images/cvtheque/imprimer.svg" alt="Imprimer" width="24"
+                                        height="24"></a><!-- Pour Imprimer, si nécessaire -->
+                                <a href="#" id="btnVoir" class="action-icons"><img
+                                        src="../assets/images/cvtheque/vue-graphique.svg" alt="vue" width="24"
+                                        height="24"></a> <!-- Pour  -->
+                            </div>
+
+                        </div>
+                        <div class="statistique">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5 class="card-title" id="title-chart">Top 5 Métiers</h5>
+                                    <div class="card mb-0">
+                                        <div class="card-body box-chiffre-other ">
+                                            <div class="live-preview" id="canva_top_Metier">
+                                
+                                                <canvas id="ChartTopMetier"
+                                                    style="display: block; box-sizing: border-box; height: 142.4px; width: 287.2px;" height="178"
+                                                    width="359"><canvas></canvas></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ... Education / Experience ... -->
+                                <div class="col-md-3">
+                                    <h5 class="card-title" id="title-chart">Education / Experience</h5>
+                                    <div class="card box-chiffre-other mb-0">
+                                        <div class="card-body box-chiffre-other">
+                                          <div class="live-preview" id="canva_top_education_experience">
+                                            
+                                          <canvas id="ChartEducationExperience" style="display: block; box-sizing: border-box; height: 142.4px; width: 287.2px;" width="359" height="178"><canvas></canvas></canvas></div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <!-- ...  Experience / Sexe  ... -->     
+                                <div class="col-md-3">
+                                    <h5 class="card-title" id="title-chart">Experience / Sexe</h5>
+                                    <div class="card box-chiffre-other mb-0">
+                                        <div class="card-body box-chiffre-other">
+                                            <div class="live-preview chart-container" id="canva_top_ExperienceSexe">
+                                                <canvas id="experienceChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <!-- ...  Experience / Sexe  ... -->     
+                                <div class="col-md-3">
+                                    <h5 class="card-title" id="title-chart">Répartition Géographique</h5>
+                                    <div class="card box-chiffre-other mb-0">
+                                        <div class="card-body box-chiffre-other">
+                                            <div class="live-preview" id="canva_top_ExperienceSexe" style="height: 664px">
+                                                <canvas id="experienceChart" width="400" height="400" style="display: block; box-sizing: border-box; width: 287.2px;"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Map -->
+                                <!-- <div class="col-md-3">
+                                    <h5 class="card-title" id="mapchart">Map</h5>
+                                    <div class="card box-chiffre-other mb-0">
+                                        <div class="card-body box-chiffre-other">
+                                            <div class="live-preview" id="canva_top_ExperienceSexe" style="height: 664px">
+                                                <div id="experienceMap" style="width: 100%; height: 100%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- Secteurs -->
+                                <div class="col-md-3" id="card-secteurs">
+                                    <h5 class="card-title" id="title-chart">Secteur</h5>
+                                    <div class="card box-chiffre-other mb-0">
+                                        <div class="card-body ox-chiffre-other">
+                                          <div class="live-preview" id="canva_top_secteurs">
+                                            
+                                          <canvas id="secteursChart" style="display: block; box-sizing: border-box; height: 286.4px; width: 287.2px;" height="358" width="359"><canvas></canvas></canvas></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3" id="card-pretention">
+                                    <h5 class="card-title" id="title-chart">Prétentions / Matching</h5>
+                                    <div class="card box-chiffre-other mb-0">
+                                        <div class="card-body ox-chiffre-other">
+                                          <div class="live-preview" id="canva_top_secteurs">
+                                            
+                                          <canvas id="pretentionsChart" style="display: block; box-sizing: border-box; height: 286.4px; width: 287.2px;" height="358" width="359"><canvas></canvas></canvas></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       </div>
+
+
+                    </div><!--end col-->
+
+                </div><!--end row-->
+
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+    </div>
+    <!-- end main content-->
+
+</div>
+
+
+
+<script>
+    function toggleCheckboxes(source) {
+        let checkboxes = document.querySelectorAll('.row-checkbox');
+        for (let i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].checked = source.checked;
+        }
+    }
+</script>
+<!-- JAVASCRIPT -->
+<script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/simplebar/simplebar.min.js"></script>
+<script src="../assets/libs/node-waves/waves.min.js"></script>
+<script src="../assets/libs/feather-icons/feather.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- <script src="../assets/js/datatable.js"></script> -->
+<!-- form wizard init -->
+<script src="../assets/js/pages/form-wizard.init.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.19.3/dist/apexcharts.min.js"></script>
+<!-- App js-->
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/datatables.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+</body>
+</html>

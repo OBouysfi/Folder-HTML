@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test ApexCharts</title>
+    <link href="https://cdn.jsdelivr.net/npm/apexcharts@3.19.3/dist/apexcharts.css" rel="stylesheet">
+</head>
+<body>
+    <div id="canva_top_ExperienceSexe" style="height: 664px"></div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.19.3/dist/apexcharts.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Données pour le graphique
+    var options = {
+        series: [{
+            name: 'Hommes',
+            data: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210]
+        }, {
+            name: 'Femmes',
+            data: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105]
+        }],
+        chart: {
+            type: 'bar',
+            height: 400
+        },
+        plotOptions: {
+            bar: {
+                horizontal: true,
+                dataLabels: {
+                    position: 'top'
+                }
+            }
+        },
+        dataLabels: {
+            enabled: true,
+            offsetX: -6,
+            style: {
+                fontSize: '12px',
+                colors: ['#fff']
+            }
+        },
+        xaxis: {
+            categories: ['1 an', '2 ans', '3 ans', '4 ans', '5 ans', '6 ans', '7 ans', '8 ans', '9 ans', '10 ans', '11 ans', '12 ans', '13 ans', '14 ans', '15 ans', '16 ans', '17 ans', '18 ans', '19 ans', '20 ans', '21+ ans']
+        },
+    };
+
+    // Création du graphique
+    var chart = new ApexCharts(document.querySelector("#canva_top_ExperienceSexe"), options);
+    chart.render();
+});
+
+    </script>
+</body>
+</html>
